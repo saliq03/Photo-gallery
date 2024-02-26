@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.camera.view.PreviewView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mycamera"/>
+    <ImageButton
+            android:id="@+id/flipcamera"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="160sp"
+            android:layout_marginRight="10sp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_flip_camera_android_24"
+            app:tint="#fff" />
+
+    <ImageButton
+            android:id="@+id/flash"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="60sp"
+            android:layout_marginRight="10sp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lash_on"
+            app:tint="#fff" />
+
+    <ImageButton
+            android:id="@+id/capture"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="40sp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_camera_24"
+            app:tint="#fff" />
+
+
+    </FrameLayout>
+</RelativeLayout>
